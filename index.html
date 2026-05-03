@@ -998,10 +998,17 @@ function seriesBlock(m,rnd){
   // Games list
   h+='<div class="games-list">';
   var schedGames=SCHED[m.id]||[];
+  var serRes=S.results&&S.results[m.id];
+  var serWinner=serRes&&serRes.winner;
+  var serGamesPlayed=serRes&&serRes.games?parseInt(serRes.games):null;
+  var actualGamesStored=0;
+  for(var gx=0;gx<7;gx++){var gsc=(S.gameScores&&S.gameScores[m.id+'_g'+gx]);if(gsc&&gsc.score)actualGamesStored=gx+1;}
   for(var gi=0;gi<7;gi++){
     var sg=schedGames[gi]||{};
     var ag=(S.schedule&&S.schedule[m.id]&&S.schedule[m.id][gi])||{};
     var sc=(S.gameScores&&S.gameScores[m.id+'_g'+gi])||{};
+    if(serWinner&&serGamesPlayed&&gi>=serGamesPlayed)continue;
+    if(!serWinner&&gi>actualGamesStored)continue;
     var dateStr=ag.date||sg.d||'';
     var timeStr=ag.time||sg.t||'';
     var venueStr=ag.venue||sg.v||'';
