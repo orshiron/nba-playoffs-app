@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>NBA Playoffs 2026 — Or's Prediction Challenge</title>
+<title>NBA Playoffs 2026 â Or's Prediction Challenge</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -14,7 +14,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:hidden;-webkit-text-size-adjust:100%}
 
-/* ── HERO ── */
+/* ââ HERO ââ */
 .hero{background:var(--black);position:relative;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 120% 80% at 50% 120%,rgba(29,66,138,.35) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 20% 50%,rgba(200,16,46,.18) 0%,transparent 50%),radial-gradient(ellipse 60% 40% at 80% 50%,rgba(201,162,39,.15) 0%,transparent 50%);pointer-events:none}
 .hero-lines{position:absolute;inset:0;opacity:.04;background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,#fff 59px,#fff 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,#fff 59px,#fff 60px);pointer-events:none}
@@ -33,7 +33,7 @@ body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:h
 .cdot{width:8px;height:8px;border-radius:50%;background:#666;flex-shrink:0;transition:background .4s}
 .cdot.on{background:#22c55e}
 
-/* ── NAV ── */
+/* ââ NAV ââ */
 .nav-wrap{background:var(--black);border-bottom:1px solid rgba(255,255,255,.1);position:sticky;top:0;z-index:200}
 .nav{max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;scrollbar-width:none;padding:0 1rem;justify-content:space-around}
 .nav::-webkit-scrollbar{display:none}
@@ -43,7 +43,7 @@ body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:h
 
 .content{max-width:1200px;margin:0 auto;padding:1.5rem 1rem 5rem}
 
-/* ── SECTION HDR ── */
+/* ââ SECTION HDR ââ */
 .sec-hdr{margin-bottom:1.25rem;padding-bottom:.85rem;border-bottom:3px solid var(--black)}
 .sec-title{font-family:var(--fd);font-size:1.9rem;letter-spacing:2px;text-transform:uppercase;color:var(--black)}
 .rnd-ttl{font-family:var(--fd);font-size:1.2rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--black);margin-bottom:.75rem;margin-top:1.5rem;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--black);padding-bottom:.4rem;flex-wrap:wrap;gap:4px}
@@ -51,14 +51,14 @@ body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:h
 .rnd-ttl:first-of-type{margin-top:0}
 .rnd-pts{font-size:.75rem;letter-spacing:.5px;color:var(--mgray);font-family:var(--fb);font-weight:400;text-transform:uppercase}
 
-/* ── CONF BANNERS ── */
+/* ââ CONF BANNERS ââ */
 .conf-banner{display:flex;align-items:center;gap:10px;margin-bottom:.6rem;margin-top:.8rem}
 .cb-e{width:26px;height:26px;background:var(--east);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:10px;color:#fff;flex-shrink:0}
 .cb-w{width:26px;height:26px;background:var(--west);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:10px;color:#fff;flex-shrink:0}
 .cb-name{font-family:var(--fd);font-size:1rem;letter-spacing:3px;text-transform:uppercase;color:var(--black)}
 .cb-line{flex:1;height:1px;background:var(--lgray)}
 
-/* ── MATCHUP CARD ── */
+/* ââ MATCHUP CARD ââ */
 .mcard{background:var(--white);border:1px solid var(--lgray);border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;transition:box-shadow .2s}
 .mcard:hover{box-shadow:0 6px 24px rgba(0,0,0,.1)}
 .mcard::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(to bottom,var(--t1c,#333),var(--t2c,#666))}
@@ -106,7 +106,7 @@ body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:h
 .brd{background:#fff1f2;color:var(--red);border:1px solid #fca5a544}
 .bgy{background:#f5f5f5;color:#888;border:1px solid #e5e5e5}
 
-/* ── USER BAR + SAVE ── */
+/* ââ USER BAR + SAVE ââ */
 .ubar{display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;flex-wrap:wrap}
 .ulbl{font-family:var(--fd);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--mgray);white-space:nowrap}
 .usel{font-family:var(--fd);font-size:15px;letter-spacing:1px;text-transform:uppercase;padding:9px 14px;background:var(--white);border:2px solid var(--black);border-radius:3px;color:var(--black);min-width:160px;cursor:pointer;width:auto;-webkit-appearance:auto}
@@ -119,7 +119,7 @@ body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:h
 .pbar strong{color:var(--goldl);font-weight:600}
 .pbar-lbl{font-family:var(--fd);font-size:12px;letter-spacing:2px;color:var(--goldl);margin-right:6px}
 
-/* ── BONUS TAB ── */
+/* ââ BONUS TAB ââ */
 .bonus-card{background:var(--black);border-radius:4px;padding:1.5rem;margin-bottom:12px;position:relative;overflow:hidden}
 .bonus-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--goldl),var(--gold))}
 .bonus-lbl{font-family:var(--fd);font-size:1.3rem;letter-spacing:2px;text-transform:uppercase;color:var(--white);margin-bottom:.35rem}
@@ -141,7 +141,7 @@ body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:h
 .unlock-note{font-size:13px;color:var(--mgray);padding:.5rem 0 .25rem}
 .mvp-locked{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:1.25rem 1.5rem;margin-bottom:12px;color:rgba(255,255,255,.4);font-size:13px;font-style:italic}
 
-/* ── STANDINGS — MOBILE FIRST ── */
+/* ââ STANDINGS â MOBILE FIRST ââ */
 .stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1.25rem}
 @media(max-width:500px){.stat-row{grid-template-columns:repeat(2,1fr)}}
 .stat-card{background:var(--black);color:var(--white);border-radius:4px;padding:1rem .75rem;text-align:center}
@@ -182,7 +182,7 @@ body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:h
   .lb-table-wrap{display:block}
 }
 
-/* ── BRACKET+SCHEDULE ── */
+/* ââ BRACKET+SCHEDULE ââ */
 .series-block{background:var(--white);border:1px solid var(--lgray);border-radius:4px;margin-bottom:12px;overflow:hidden}
 .series-header{background:var(--black);padding:14px 18px;display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;flex-wrap:wrap}
 .series-header:hover{background:#111}
@@ -223,7 +223,7 @@ body{background:var(--off);font-family:var(--fb);color:var(--black);overflow-x:h
 .gi-score{font-family:'Anton',var(--fd);font-size:1.2rem;color:var(--black);min-width:70px;text-align:center;flex-shrink:0}
 .gi-score.hidden-score{filter:blur(6px);cursor:pointer;transition:filter .3s}
 .gi-score.hidden-score:hover{filter:blur(2px)}
-/* Spoiler shield via body class — works on already-open series without re-render */
+/* Spoiler shield via body class â works on already-open series without re-render */
 body.spoiler-on .gi-score.ld{filter:blur(6px);cursor:pointer;transition:filter .3s}
 body.spoiler-on .gi-score.ld:hover{filter:blur(2px)}
 body.spoiler-on .bkt-sc.ld{filter:blur(6px);transition:filter .3s}
@@ -250,7 +250,7 @@ body.spoiler-on .gi-score.ld::after{content:'';display:none}
 /* tipoff label */
 .tof-lbl{font-size:11px;color:var(--mgray);font-style:italic}
 
-/* ── ALL PICKS ACCORDION ── */
+/* ââ ALL PICKS ACCORDION ââ */
 .ap-acc{background:var(--white);border:1px solid var(--lgray);border-radius:4px;margin-bottom:8px;overflow:hidden}
 .ap-acc-hdr{background:var(--black);padding:13px 16px;display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;transition:background .15s}
 .ap-acc-hdr:hover{background:#111}
@@ -266,9 +266,9 @@ body.spoiler-on .gi-score.ld::after{content:'';display:none}
 .ap-rnd-lbl{font-family:var(--fd);font-size:1.1rem;letter-spacing:2px;text-transform:uppercase;color:var(--black);margin:1.25rem 0 .6rem;padding-bottom:.4rem;border-bottom:2px solid var(--black)}
 .ap-rnd-lbl:first-of-type{margin-top:.25rem}
 
-/* ── ALL PICKS ── */
+/* ââ ALL PICKS ââ */
 .ap-card{background:var(--white);border:1px solid var(--lgray);border-radius:4px;overflow:hidden;margin-bottom:10px}
-/* ── PERFECTLY CENTERED HEADER for Schedule/AllPicks ── */
+/* ââ PERFECTLY CENTERED HEADER for Schedule/AllPicks ââ */
 .match-hdr{background:var(--black);padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:0;position:relative;flex-wrap:wrap;row-gap:4px}
 .mh-left{display:flex;align-items:center;gap:8px}
 .mh-vs{font-family:var(--fd);font-size:14px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);padding:0 12px;flex-shrink:0}
@@ -293,7 +293,7 @@ body.spoiler-on .gi-score.ld::after{content:'';display:none}
   .ap-tbl th,.ap-tbl td{padding:8px 6px}
 }
 
-/* ── ADMIN ── */
+/* ââ ADMIN ââ */
 .adm-hdr{background:var(--red);color:var(--white);border-radius:4px;padding:.85rem 1.25rem;margin-bottom:1.25rem;font-family:var(--fd);font-size:12px;letter-spacing:2.5px;text-transform:uppercase}
 .adm-sec{background:var(--white);border:1px solid var(--lgray);border-radius:4px;padding:1.25rem;margin-bottom:12px}
 .adm-ttl{font-family:var(--fd);font-size:1.1rem;letter-spacing:2px;text-transform:uppercase;color:var(--black);margin-bottom:.85rem;padding-bottom:.6rem;border-bottom:2px solid var(--black)}
@@ -319,13 +319,13 @@ body.spoiler-on .gi-score.ld::after{content:'';display:none}
 .pwd-btn{padding:12px 32px;background:var(--gold);color:#000;font-family:var(--fd);font-size:16px;letter-spacing:2px;text-transform:uppercase;border:none;border-radius:3px;cursor:pointer;max-width:300px;width:100%}
 .pwd-err{color:var(--red);font-size:13px;letter-spacing:1px;min-height:20px}
 
-/* ── TOAST / SYNC ── */
+/* ââ TOAST / SYNC ââ */
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(12px);background:var(--black);color:var(--goldl);padding:11px 26px;border-radius:3px;font-family:var(--fd);font-size:13px;letter-spacing:3px;text-transform:uppercase;z-index:9999;opacity:0;transition:all .3s;pointer-events:none;border-left:4px solid var(--gold)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 .sync-bar{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--red),var(--east));z-index:99999;opacity:0;transition:opacity .4s}
 .sync-bar.show{opacity:1}
 
-/* ── CONF GRID ── */
+/* ââ CONF GRID ââ */
 .conf-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:700px){.conf-grid{grid-template-columns:1fr}}
 @media(max-width:400px){
@@ -383,26 +383,26 @@ option{background:#fff;color:#000}
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
 <script>
-// ── LOCALSTORAGE HELPERS (avoids quote-escaping issues in HTML attributes) ──
+// ââ LOCALSTORAGE HELPERS (avoids quote-escaping issues in HTML attributes) ââ
 function lsSet(k,v){try{localStorage.setItem(k,v);}catch(e){}}
 function lsGet(k){try{return localStorage.getItem(k);}catch(e){return null;}}
 function saveUser(v){lsSet('nba26_user',v);}
 function saveSpoiler(v){lsSet('nba26_spoiler',v?'1':'0');}
 
-// ── FIREBASE ─────────────────────────────────────────────────────
+// ââ FIREBASE âââââââââââââââââââââââââââââââââââââââââââââââââââââ
 var FBC={apiKey:"AIzaSyDhdHp4iMFYOebQBtomofOWjI1xiCtYtCs",authDomain:"nba-playoffs-2026-8def3.firebaseapp.com",databaseURL:"https://nba-playoffs-2026-8def3-default-rtdb.firebaseio.com",projectId:"nba-playoffs-2026-8def3",storageBucket:"nba-playoffs-2026-8def3.firebasestorage.app",messagingSenderId:"943460521941",appId:"1:943460521941:web:5c5ebc7c741d2eda38cf5c"};
 
-// ── TEAM DATA ─────────────────────────────────────────────────────
+// ââ TEAM DATA âââââââââââââââââââââââââââââââââââââââââââââââââââââ
 var LOGOS={Pistons:'https://cdn.nba.com/logos/nba/1610612765/global/L/logo.svg','76ers':'https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg',Celtics:'https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg',Knicks:'https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg',Cavs:'https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg',OKC:'https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg',Spurs:'https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg',Nuggets:'https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg',Lakers:'https://cdn.nba.com/logos/nba/1610612747/global/L/logo.svg',Hornets:'https://cdn.nba.com/logos/nba/1610612766/global/L/logo.svg',Hawks:'https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg',Raptors:'https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg',Blazers:'https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg',Suns:'https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg',Warriors:'https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg',Timberwolves:'https://cdn.nba.com/logos/nba/1610612750/global/L/logo.svg',Rockets:'https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg',Magic:'https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg'};
 var COLORS={Pistons:'#1d42ba','76ers':'#006bb6',Celtics:'#007a33',Knicks:'#006bb6',Cavs:'#860038',OKC:'#007ac1',Spurs:'#c4ced4',Nuggets:'#0e2240',Lakers:'#552583',Hornets:'#1d1160',Hawks:'#e03a3e',Raptors:'#ce1141',Blazers:'#e03a3e',Suns:'#e56020',Warriors:'#1d428a',Timberwolves:'#0c2340',Rockets:'#ce1141',Magic:'#0077c0'};
 var ABBR={Pistons:'DET','76ers':'PHI',Celtics:'BOS',Knicks:'NYK',Cavs:'CLE',OKC:'OKC',Spurs:'SAS',Nuggets:'DEN',Lakers:'LAL',Hornets:'CHA',Hawks:'ATL',Raptors:'TOR',Blazers:'POR',Suns:'PHX',Warriors:'GSW',Timberwolves:'MIN',Rockets:'HOU',Magic:'ORL'};
 
-// ── CHAMPION PTS ──────────────────────────────────────────────────
+// ââ CHAMPION PTS ââââââââââââââââââââââââââââââââââââââââââââââââââ
 var BASE_PTS={OKC:4,Celtics:5,Spurs:5,Nuggets:6,Cavs:7,Pistons:7,Knicks:7};
 function gcp(t,ov){if(ov&&ov[t]!==undefined)return parseInt(ov[t]);return BASE_PTS[t]!==undefined?BASE_PTS[t]:8;}
 function cmap(ov){var ts=['OKC','Celtics','Spurs','Nuggets','Cavs','Pistons','Knicks','Lakers','Rockets','Hawks','Raptors','Blazers','Suns','76ers','Timberwolves','Magic'];var o={};ts.forEach(function(t){o[t]=gcp(t,ov);});return o;}
 
-// ── REGULAR SEASON RECORDS & EXPERT PREDICTIONS ─────────────────
+// ââ REGULAR SEASON RECORDS & EXPERT PREDICTIONS âââââââââââââââââ
 // Source: ESPN, Yahoo Sports, DraftKings (Apr 2026)
 var REG_RECORD = {
   e1: {fav:'Pistons', rec:'3-1 Pistons'},
@@ -416,17 +416,17 @@ var REG_RECORD = {
 };
 // Expert consensus prediction (winner in X games) + DraftKings series odds
 var SUGGESTED = {
-  e1: {pick:'Pistons', games:'5', note:'Pistons in 5 — heavy favorites (-425)'},
-  e2: {pick:'Celtics', games:'5', note:'Celtics in 5 — massive favorites (-900)'},
-  e3: {pick:'Knicks',  games:'6', note:'Knicks in 6 — favorites (-275)'},
-  e4: {pick:'Cavs',    games:'6', note:'Cavs in 6 — strong favorites (-550)'},
-  w1: {pick:'OKC',     games:'5', note:'OKC in 5 — defending champs, heavy favorites'},
-  w2: {pick:'Spurs',   games:'5', note:'Spurs in 5 — dominant favorites (-2000)'},
-  w3: {pick:'Nuggets', games:'6', note:'Nuggets in 6 — Jokić in peak form (-350)'},
-  w4: {pick:'Rockets', games:'5', note:'Rockets in 5 — Lakers missing Luka (-600)'}
+  e1: {pick:'Pistons', games:'5', note:'Pistons in 5 â heavy favorites (-425)'},
+  e2: {pick:'Celtics', games:'5', note:'Celtics in 5 â massive favorites (-900)'},
+  e3: {pick:'Knicks',  games:'6', note:'Knicks in 6 â favorites (-275)'},
+  e4: {pick:'Cavs',    games:'6', note:'Cavs in 6 â strong favorites (-550)'},
+  w1: {pick:'OKC',     games:'5', note:'OKC in 5 â defending champs, heavy favorites'},
+  w2: {pick:'Spurs',   games:'5', note:'Spurs in 5 â dominant favorites (-2000)'},
+  w3: {pick:'Nuggets', games:'6', note:'Nuggets in 6 â JokiÄ in peak form (-350)'},
+  w4: {pick:'Rockets', games:'5', note:'Rockets in 5 â Lakers missing Luka (-600)'}
 };
 
-// ── TIP-OFF TIMES (Israel = UTC+3, ET+7) ─────────────────────────
+// ââ TIP-OFF TIMES (Israel = UTC+3, ET+7) âââââââââââââââââââââââââ
 var TIPOFFS={
   e1:new Date('2026-04-19T23:30:00+03:00'), // Pistons vs E8: 6:30pm ET
   e2:new Date('2026-04-19T20:00:00+03:00'), // Celtics vs 76ers: 1pm ET -> 20:00 IL
@@ -438,7 +438,7 @@ var TIPOFFS={
   w4:new Date('2026-04-19T03:30:00+03:00')  // Lakers vs Rockets: Sat 8:30pm ET -> Sun 3:30am IL
 };
 
-// ── SCHEDULE DATA ─────────────────────────────────────────────────
+// ââ SCHEDULE DATA âââââââââââââââââââââââââââââââââââââââââââââââââ
 var SCHED={
   e1:[{d:'Sun Apr 19',t:'1:30 AM IL',v:'Little Caesars Arena, Detroit'},{d:'Wed Apr 22',t:'2:00 AM IL',v:'Little Caesars Arena, Detroit'},{d:'Sat Apr 25',t:'8:00 PM IL',v:'Kia Center, Orlando'},{d:'Mon Apr 27',t:'TBD',v:'Kia Center, Orlando'},{d:'Wed Apr 29',t:'TBD',v:'Little Caesars Arena'},{d:'Fri May 1',t:'TBD',v:'Kia Center, Orlando'},{d:'Sun May 3',t:'TBD',v:'Little Caesars Arena'}],
   e2:[{d:'Sun Apr 19',t:'8:00 PM IL',v:'TD Garden, Boston'},{d:'Tue Apr 21',t:'3:00 AM IL',v:'TD Garden, Boston'},{d:'Fri Apr 24',t:'2:00 AM IL',v:'Wells Fargo Center, Philadelphia'},{d:'Sun Apr 26',t:'2:00 AM IL',v:'Wells Fargo Center, Philadelphia'},{d:'Tue Apr 28',t:'TBD',v:'TD Garden, Boston'},{d:'Thu Apr 30',t:'TBD',v:'Wells Fargo Center'},{d:'Sat May 2',t:'TBD',v:'TD Garden, Boston'}],
@@ -450,7 +450,7 @@ var SCHED={
   w4:[{d:'Sat Apr 18',t:'3:30 AM IL',v:'Crypto.com Arena, Los Angeles'},{d:'Mon Apr 20',t:'5:30 AM IL',v:'Crypto.com Arena, Los Angeles'},{d:'Thu Apr 23',t:'3:00 AM IL',v:'Toyota Center, Houston'},{d:'Sat Apr 25',t:'TBD',v:'Toyota Center, Houston'},{d:'Wed Apr 29',t:'TBD',v:'Los Angeles'},{d:'Fri May 1',t:'TBD',v:'Houston'},{d:'Sun May 3',t:'TBD',v:'Los Angeles'}]
 };
 
-// ── BRACKET ───────────────────────────────────────────────────────
+// ââ BRACKET âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 var ROUNDS=[
   {id:'r1',label:'First Round',winPts:1,exactPts:2,underdog:true,matchups:[
     {id:'e1',conf:'East',s1:1,t1:'Pistons',s2:8,t2:'Magic'},
@@ -463,10 +463,10 @@ var ROUNDS=[
     {id:'w4',conf:'West',s1:4,t1:'Lakers',s2:5,t2:'Rockets'}
   ]},
   {id:'r2',label:'Conference Semifinals',winPts:2,exactPts:4,underdog:false,matchups:[
-    {id:'es1',conf:'East',t1:'East 1/8 winner',t2:'East 4/5 winner'},
-    {id:'es2',conf:'East',t1:'East 2/7 winner',t2:'East 3/6 winner'},
-    {id:'ws1',conf:'West',t1:'West 1/8 winner',t2:'West 4/5 winner'},
-    {id:'ws2',conf:'West',t1:'West 2/7 winner',t2:'West 3/6 winner'}
+    {id:'es1',conf:'East',t1:'Pistons',t2:'Cavs'},
+    {id:'es2',conf:'East',t1:'76ers',t2:'Knicks'},
+    {id:'ws1',conf:'West',t1:'OKC',t2:'Lakers'},
+    {id:'ws2',conf:'West',t1:'Timberwolves',t2:'Spurs'}
   ]},
   {id:'r3',label:'Conference Finals',winPts:3,exactPts:6,underdog:false,matchups:[
     {id:'ecf',conf:'East',t1:'East Semi 1 winner',t2:'East Semi 2 winner'},
@@ -477,14 +477,14 @@ var ROUNDS=[
   ]}
 ];
 
-// ── STATE ─────────────────────────────────────────────────────────
-var S={participants:['אור','עמית','מולי (עידן)','מולי (עומר)','סתיו','טל','רביד','וידר','דרור','תמיר'],picks:{},results:{},champLocked:false,schedule:{},gameScores:{},pointCorrections:{},customOddsOverride:{},rounds:null,adminPin:'1234'};
+// ââ STATE âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+var S={participants:['×××¨','×¢×××ª','×××× (×¢×××)','×××× (×¢×××¨)','×¡×ª××','××','×¨×××','××××¨','××¨××¨','×ª×××¨'],picks:{},results:{},champLocked:false,schedule:{},gameScores:{},pointCorrections:{},customOddsOverride:{},rounds:null,adminPin:'1234'};
 var db=null,dbRef=null,saveTimer=null,curTab='picks',selectedUser='',adminUnlocked=false,spoilerHide=false;
 
-// ── LOCALSTORAGE HELPERS (avoids quote-escaping issues in HTML attributes) ──
+// ââ LOCALSTORAGE HELPERS (avoids quote-escaping issues in HTML attributes) ââ
 
 
-// ── FIREBASE ──────────────────────────────────────────────────────
+// ââ FIREBASE ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function initFB(){
   try{
     firebase.initializeApp(FBC);db=firebase.database();dbRef=db.ref('state');
@@ -499,7 +499,7 @@ function initFB(){
       if(v){
         var lr=S.rounds;S=Object.assign({},S,v);if(!S.rounds&&lr)S.rounds=lr;
         ['picks','results','schedule','gameScores','pointCorrections','customOddsOverride'].forEach(function(k){if(!S[k])S[k]={};});
-        if(!S.participants||!S.participants.length)S.participants=['אור','עמית','מולי (עידן)','מולי (עומר)','סתיו','טל','רביד','וידר','דרור','תמיר'];
+        if(!S.participants||!S.participants.length)S.participants=['×××¨','×¢×××ª','×××× (×¢×××)','×××× (×¢×××¨)','×¡×ª××','××','×¨×××','××××¨','××¨××¨','×ª×××¨'];
         if(!S.adminPin)S.adminPin='1234';
       }
       refresh();
@@ -518,7 +518,7 @@ function push(){
 function save(msg){if(saveTimer)clearTimeout(saveTimer);saveTimer=setTimeout(push,400);if(msg)toast(msg);}
 function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2400);}
 
-// ── HELPERS ───────────────────────────────────────────────────────
+// ââ HELPERS âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function curR(){return(S.rounds&&S.rounds.length)?S.rounds:ROUNDS;}
 function isUD(m,w){return!!(m.s1&&m.s2&&w===m.t2);}
 function gsv(mid){return(S.results&&S.results[mid]&&S.results[mid].seriesScore)?S.results[mid].seriesScore:'';}
@@ -537,7 +537,7 @@ function isLocked(mid){var res=S.results&&S.results[mid];if(res&&res.winner)retu
 function cdStr(mid){var to=TIPOFFS[mid];if(!to)return null;var d=to.getTime()-Date.now();if(d<=0)return null;var dy=Math.floor(d/86400000),h=Math.floor((d%86400000)/3600000),m=Math.floor((d%3600000)/60000),s=Math.floor((d%60000)/1000);var urg=d<3600000;var str=dy>0?dy+'d '+h+'h '+m+'m':h>0?h+'h '+m+'m '+s+'s':m+'m '+s+'s';return{str:str,urg:urg};}
 function tofLbl(mid){var to=TIPOFFS[mid];if(!to)return'Apr 18';try{return to.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',hour12:true,timeZone:'Asia/Jerusalem'})+' IL';}catch(e){return'Apr 18';}}
 
-// Logo helpers — 3 sizes
+// Logo helpers â 3 sizes
 function tlg(name,sz,cls){
   sz=sz||40;cls=cls||'tl';
   var url=LOGOS[name],ab=ABBR[name]||(name?name.substring(0,3).toUpperCase():'?'),bg=COLORS[name]||'#444';
@@ -558,7 +558,7 @@ function calcSc(p){
   return{name:p,total:tot,r:r,champ:ch,mvp:mv,corr:co,wins:wins,bullseyes:bullseyes};
 }
 
-// ── NAVIGATION ────────────────────────────────────────────────────
+// ââ NAVIGATION ââââââââââââââââââââââââââââââââââââââââââââââââââââ
 var TABS=['picks','bonus','standings','allpicks','bracket','admin'];
 var RFNS={picks:renderPicks,bonus:renderBonus,standings:renderStandings,allpicks:renderAllPicks,bracket:renderBracket,admin:renderAdmin};
 function showTab(id){
@@ -583,7 +583,7 @@ function startCDs(){
   },1000);
 }
 
-// ── MY PICKS ─────────────────────────────────────────────────────
+// ââ MY PICKS âââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function renderPicks(){
   var el=document.getElementById('tab-picks');if(!el)return;
   var ps=S.participants||[];
@@ -648,7 +648,7 @@ function mkCard(m,rnd,pk,user){
   var s2v=svNums&&!spoilerHide?svNums.split('-')[1]:null;
   var sc1='twins'+(res&&res.winner===t1?' won':sv?' ld':'');
   var sc2='twins'+(res&&res.winner===t2?' won':sv?' ld':'');
-  var gOpts='<option value="">— Series Bet —</option>';
+  var gOpts='<option value="">â Series Bet â</option>';
   ['4','5','6','7'].forEach(function(g){gOpts+='<option value="'+g+'"'+(String(pick.games)===g?' selected':'')+'>4\u2013'+(parseInt(g)-4)+(g==='4'?' (Sweep)':'')+'</option>';});
   var h='<div class="mcard" style="--t1c:'+c1+';--t2c:'+c2+'">';
   // Series score for this matchup (hidden if spoiler shield on)
@@ -671,7 +671,7 @@ function mkCard(m,rnd,pk,user){
     var sg=SUGGESTED[m.id],rr=REG_RECORD[m.id];
     recInfo='<div style="display:flex;align-items:center;gap:8px;padding:5px 18px 6px;background:#f8f8f8;border-bottom:1px solid var(--lgray);flex-wrap:wrap;gap:6px">';
     recInfo+='<span style="font-size:10px;color:var(--mgray);letter-spacing:.5px">Reg. season: <strong style="color:var(--dgray)">'+rr.rec+'</strong></span>';
-    recInfo+='<span style="color:#ddd;font-size:10px">·</span>';
+    recInfo+='<span style="color:#ddd;font-size:10px">Â·</span>';
     recInfo+='<span style="display:inline-flex;align-items:center;gap:4px;background:var(--black);border-radius:20px;padding:2px 9px">';
     recInfo+='<span style="font-size:9px;letter-spacing:1px;font-family:var(--fd);color:var(--goldl);text-transform:uppercase">Expert pick</span>';
     recInfo+='<span style="font-size:10px;color:#fff;font-family:var(--fd);letter-spacing:.5px">'+sg.pick+' in '+sg.games+'</span>';
@@ -705,7 +705,7 @@ function setP(user,field,value){
 }
 function saveP(user){save();var h=document.getElementById('sv-hint');if(h){h.textContent='\u2713 Saved!';setTimeout(function(){if(h)h.textContent='';},2400);}toast('Picks saved!');}
 
-// ── BONUS TAB ─────────────────────────────────────────────────────
+// ââ BONUS TAB âââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function renderBonus(){
   var el=document.getElementById('tab-bonus');if(!el)return;
   // Find current user from picks tab dropdown
@@ -725,14 +725,14 @@ function renderBonus(){
   h+='<select class="usel" id="bonus-user-sel" onchange="selectedUser=this.value;saveUser(this.value);renderBonus()">'+opts+'</select>';
   h+='</div>';
 
-  // ── CHAMPION BONUS ──
+  // ââ CHAMPION BONUS ââ
   h+='<h3 style="font-family:var(--fd);font-size:1.3rem;letter-spacing:2px;text-transform:uppercase;border-bottom:2px solid var(--black);padding-bottom:.4rem;margin-bottom:1rem">&#x1F3C6; NBA Champion Bonus <span style="font-size:.8rem;letter-spacing:1px;color:var(--mgray)">4\u20138 pts &middot; locked before tip-off</span></h3>';
   if(S.champLocked){
     var match=ac&&cp.toLowerCase().trim()===ac.toLowerCase().trim();
     h+='<div class="locked-ban">&#x1F512; Champion picks are locked &mdash; Your pick: <strong>'+( cp||'\u2014')+'</strong>'+(ac?(match?' &nbsp;<span class="bdg bgr">+'+( pm[cp]||8)+'pts!</span>':' &nbsp;<span class="bdg brd">No match</span>'):'')+'</div>';
   }else{
     h+='<div class="bonus-card"><div class="bonus-lbl">&#x1F3C6; NBA Champion</div><div class="bonus-desc">Pick the champion before tip-off is locked</div>';
-    var bopts='<option value="">— Select your champion —</option>';
+    var bopts='<option value="">â Select your champion â</option>';
     sorted.forEach(function(tp){bopts+='<option value="'+tp[0]+'"'+(cp===tp[0]?' selected':'')+'>'+tp[0]+' \u2014 '+tp[1]+' pts</option>';});
     h+='<select class="bsel" onchange="setP(\''+esc(user)+'\',\'champion\',this.value);renderBonus()">'+bopts+'</select>';
     if(cp)h+='<div class="bpick">Your pick: <strong>'+cp+'</strong> \u2192 worth <strong>'+( pm[cp]||8)+' pts</strong> if correct</div>';
@@ -741,7 +741,7 @@ function renderBonus(){
     h+='</div></div>';
   }
 
-  // ── FINALS MVP ──
+  // ââ FINALS MVP ââ
   var fr=(S.results&&S.results['finals'])?S.results['finals']:{};
   var fLive=fr.t1||fr.winner;
   h+='<h3 style="font-family:var(--fd);font-size:1.3rem;letter-spacing:2px;text-transform:uppercase;border-bottom:2px solid var(--black);padding-bottom:.4rem;margin-bottom:1rem;margin-top:2rem">&#x2B50; Finals MVP Bonus <span style="font-size:.8rem;letter-spacing:1px;color:var(--mgray)">+2 pts</span></h3>';
@@ -759,7 +759,7 @@ function renderBonus(){
   el.innerHTML=h;
 }
 
-// ── STANDINGS ─────────────────────────────────────────────────────
+// ââ STANDINGS âââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function renderStandings(){
   var el=document.getElementById('tab-standings');if(!el)return;
   var scores=(S.participants||[]).map(calcSc).sort(function(a,b){return b.total-a.total||b.bullseyes-a.bullseyes;});
@@ -801,7 +801,7 @@ function renderStandings(){
   el.innerHTML=h;
 }
 
-// ── ALL PICKS ─────────────────────────────────────────────────────
+// ââ ALL PICKS âââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function renderAllPicks(){
   var el=document.getElementById('tab-allpicks');if(!el)return;
   var h='<div class="sec-hdr" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">';
@@ -809,7 +809,7 @@ function renderAllPicks(){
   h+='<button onclick="toggleSpoiler();renderAllPicks()" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:'+(spoilerHide?'var(--red)':'var(--black)')+';color:#fff;font-family:var(--fd);font-size:11px;letter-spacing:2px;text-transform:uppercase;border:none;border-radius:20px;cursor:pointer">'+(spoilerHide?'&#x1F441; Show Scores':'&#x1F648; Hide Scores')+'</button>';
   h+='</div>';
 
-  // ── CHAMPION BONUS ACCORDION ────────────────────────────────
+  // ââ CHAMPION BONUS ACCORDION ââââââââââââââââââââââââââââââââ
   var pm=cmap(S.customOddsOverride||{});
   var champRes=(S.results&&S.results.champion)?S.results.champion:'';
   h+='<div class="ap-acc" id="ap-champ">';
@@ -839,7 +839,7 @@ function renderAllPicks(){
   h+='</tbody></table></div>';
   h+='</div></div>';
 
-  // ── SERIES ACCORDIONS BY ROUND ──────────────────────────────
+  // ââ SERIES ACCORDIONS BY ROUND ââââââââââââââââââââââââââââââ
   curR().forEach(function(rnd){
     h+='<div class="ap-rnd-lbl">'+rnd.label+'</div>';
     rnd.matchups.forEach(function(m){
@@ -871,7 +871,7 @@ function renderAllPicks(){
       h+='<span class="ap-acc-chev" id="chev-'+accId+'">&#x25BE;</span>';
       h+='</div>';
       h+='</div>';
-      // Body — hidden by default
+      // Body â hidden by default
       h+='<div class="ap-acc-body" id="body-'+accId+'" style="display:none">';
       h+='<div style="overflow-x:auto"><table class="ap-tbl"><thead><tr>';
       h+='<th style="text-align:left">Participant</th><th>Pick</th><th>Series Bet</th><th>Result</th>';
@@ -905,7 +905,7 @@ function toggleAP(id){
 }
 
 
-// ── BRACKET + SCHEDULE (combined) ────────────────────────────────
+// ââ BRACKET + SCHEDULE (combined) ââââââââââââââââââââââââââââââââ
 function renderBracket(){
   var el=document.getElementById('tab-bracket');if(!el)return;
   // Spoiler toggle button
@@ -1017,7 +1017,7 @@ function seriesBlock(m,rnd){
     var hasShort=!!(sc.ytShortId);
     var hasLong=!!(sc.ytLongId);
     var hasAnyVideo=hasShort||hasLong;
-    // Score display — hidden if spoiler shield on
+    // Score display â hidden if spoiler shield on
     var scoreDisp='';
     if(hasScore){
       if(spoilerHide){
@@ -1033,7 +1033,7 @@ function seriesBlock(m,rnd){
     h+='<span class="gi-num">G'+(gi+1)+'</span>';
     h+='<div class="gi-info"><div class="gi-date">'+dateStr+(timeStr?' &middot; '+timeStr:'')+'</div>'+(venueStr?'<div class="gi-venue">'+venueStr+'</div>':'')+'</div>';
     h+=scoreDisp;
-    // Video buttons — always visible even with spoiler shield
+    // Video buttons â always visible even with spoiler shield
     if(hasAnyVideo){
       h+='<div class="yt-btn-row" style="width:100%;padding-left:54px">';
       if(hasShort){
@@ -1065,7 +1065,7 @@ function seriesBlock(m,rnd){
   return h;
 }
 
-// ── ADMIN PASSWORD GATE ──────────────────────────────────────────
+// ââ ADMIN PASSWORD GATE ââââââââââââââââââââââââââââââââââââââââââ
 function showAdminGate(){
   // Remove any existing gate
   var existing=document.getElementById('pwd-gate');if(existing)existing.remove();
@@ -1096,7 +1096,7 @@ function checkPin(){
   }
 }
 
-// ── ADMIN ─────────────────────────────────────────────────────────
+// ââ ADMIN âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function renderAdmin(){
   var el=document.getElementById('tab-admin');if(!el)return;
   var pm=cmap(S.customOddsOverride||{});
@@ -1202,7 +1202,7 @@ function renderAdmPicks(){
     rnd.matchups.forEach(function(m){
       if(!m.t1||m.t1.indexOf('winner')!==-1)return;
       var pick=pk[m.id]||{};
-      var gOpts='<option value="">— Series Bet —</option>';['4','5','6','7'].forEach(function(g){gOpts+='<option value="'+g+'"'+(String(pick.games)===g?' selected':'')+'>4\u2013'+(parseInt(g)-4)+'</option>';});
+      var gOpts='<option value="">â Series Bet â</option>';['4','5','6','7'].forEach(function(g){gOpts+='<option value="'+g+'"'+(String(pick.games)===g?' selected':'')+'>4\u2013'+(parseInt(g)-4)+'</option>';});
       h+='<div class="adm-row" style="margin-bottom:.35rem;flex-wrap:wrap"><span class="aspan" style="min-width:160px">'+m.t1+' vs '+m.t2+'</span>';
       h+='<select class="asel" style="width:130px" onchange="admSetPick(\''+esc(user)+'\',\''+m.id+'.winner\',this.value)">';
       h+='<option value="">Winner\u2026</option>';
@@ -1217,7 +1217,7 @@ function renderAdmPicks(){
 }
 function admSetPick(user,field,value){setP(user,field,value);}
 
-// ── ADMIN HELPERS ─────────────────────────────────────────────────
+// ââ ADMIN HELPERS âââââââââââââââââââââââââââââââââââââââââââââââââ
 function eT(ri,mi,f,v){if(!S.rounds)S.rounds=JSON.parse(JSON.stringify(ROUNDS));S.rounds[ri].matchups[mi][f]=v;save('Team updated');}
 function sR(id,f,v){if(!S.results)S.results={};if(!S.results[id])S.results[id]={};S.results[id][f]=v;save('Saved');}
 function sRF(id,f,v){sR(id,f,v);}
@@ -1229,7 +1229,7 @@ function addP(){var inp=document.getElementById('new-p');var n=(inp&&inp.value||
 function rmP(i){var n=S.participants[i];S.participants.splice(i,1);if(S.picks)delete S.picks[n];save('Removed '+n);renderAdmin();}
 function changePin(){var inp=document.getElementById('new-pin');var v=(inp&&inp.value||'').trim();if(!v){toast('Enter a PIN');return;}S.adminPin=v;save('PIN updated!');inp.value='';}
 
-// ── BOOT ──────────────────────────────────────────────────────────
+// ââ BOOT ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 // Load persisted user preferences from localStorage
 (function(){
   try{
