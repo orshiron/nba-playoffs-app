@@ -428,6 +428,12 @@ var SUGGESTED = {
 
 // ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ TIP-OFF TIMES (Israel = UTC+3, ET+7) ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ
 var TIPOFFS={
+  // ── Round 2: Conference Semifinals ──────────────────────────
+  es2:new Date('2026-05-05T00:00:00Z'), // Knicks vs 76ers:      May 5 3:00 AM IST
+  ws2:new Date('2026-05-05T01:30:00Z'), // Timberwolves vs Spurs: May 5 4:30 AM IST
+  es1:new Date('2026-05-05T23:00:00Z'), // Pistons vs Cavs:       May 6 2:00 AM IST
+  ws1:new Date('2026-05-06T00:30:00Z'), // OKC vs Lakers:         May 6 3:30 AM IST
+  // ── Round 1 ─────────────────────────────────────────────────
   e1:new Date('2026-04-19T23:30:00+03:00'), // Pistons vs E8: 6:30pm ET
   e2:new Date('2026-04-19T20:00:00+03:00'), // Celtics vs 76ers: 1pm ET -> 20:00 IL
   e3:new Date('2026-04-19T01:00:00+03:00'), // Knicks vs Hawks: Sat 6pm ET -> Sun 1am IL
@@ -554,7 +560,7 @@ function serScoreNums(mid,t1,t2){
 }
 function esc(s){return(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'");}
 function isLocked(mid){var res=S.results&&S.results[mid];if(res&&res.winner)return true;var to=TIPOFFS[mid];if(!to)return false;return Date.now()>=to.getTime();}
-function cdStr(mid){var to=TIPOFFS[mid];if(!to)return null;var d=to.getTime()-Date.now();if(d<=0)return null;var dy=Math.floor(d/86400000),h=Math.floor((d%86400000)/3600000),m=Math.floor((d%3600000)/60000),s=Math.floor((d%60000)/1000);var urg=d<3600000;var str=dy>0?dy+'d '+h+'h '+m+'m':h>0?h+'h '+m+'m '+s+'s':m+'m '+s+'s';return{str:str,urg:urg};}
+function cdStr(mid){var to=TIPOFFS[mid];if(!to)return null;var d=to.getTime()-Date.now();if(d<=0)return null;var dy=Math.floor(d/86400000),h=Math.floor((d%86400000)/3600000),m=Math.floor((d%3600000)/60000),s=Math.floor((d%60000)/1000);var urg=d<3600000;var hh=String(h).padStart(2,'0'),mm=String(m).padStart(2,'0'),ss=String(s).padStart(2,'0');var str=dy>0?dy+'d '+hh+':'+mm+':'+ss:hh+':'+mm+':'+ss;return{str:str,urg:urg};}
 function tofLbl(mid){var to=TIPOFFS[mid];if(!to)return'Apr 18';try{return to.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',hour12:true,timeZone:'Asia/Jerusalem'})+' IL';}catch(e){return'Apr 18';}}
 
 // Logo helpers ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ 3 sizes
